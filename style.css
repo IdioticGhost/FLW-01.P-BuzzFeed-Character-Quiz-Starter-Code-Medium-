@@ -1,47 +1,114 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-image: url('https://images.pexels.com/photos/7311920/pexels-photo-7311920.jpeg?cs=srgb&dl=pexels-alberlan-barros-7311920.jpg&fm=jpg')
+}
+
+
+.chat-window {
+  background-color: rgba(31, 31, 46, 0.7);
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  
+}
+
+.messengers {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+
+/* chat containers */
+.darth-container {
+  border: 2px solid #000000;
+  background-color: #5000c7;
+  border-radius: 5px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 700px;
+
 }
 
-.companies {
-  display: flex;
-  justify-content: space-around;
+
+.yoda-container {
+  border-color: #ccc;
+  background-color: #00a372;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: right;
+   max-width: 700px;
 }
 
-.home {
+/* avatar images */
+.darth-container img {
+  border-radius: 50%;
+  height: 50px;
+  margin: 10px;
+  float: left;
+  max-width: 60px;
+}
+
+.yoda-container img {
+  border-radius: 50%;
+  height: 50px;
+  margin: 10px;
+  float: right;
+  max-width: 60px;
+}
+
+
+/* inputs and buttons */
+.sender-darth {
+  background-color: #5000c7;
+  color: white;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
-.student {
-  border: 1px solid white;
-  width: 300px;
+.sender-yoda {
+  background-color: #00a372;
+  color: white;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
+  border-radius: 10px;
 }
 
-.student img {
-  width: 200px;
+.darth-container::after {
+  content: "";
+  clear: left;
+  display: table;
+
 }
 
-.students{
-  display: flex;
-  justify-content: space-around;
+.yoda-container::after {
+  content: "";
+  clear: right;
+  display: table;
 }
 
-h1 {
-  color: #fee975;
+.sender-title-darth {
+  padding: 10px;
 }
 
-img {
-  width: 400px;
+.sender-title-yoda {
+  padding: 10px;
 }
 
-a {
-  color: #0080ff;
+.darth-input {
+  margin: 10px;
 }
 
-a:hover {
-  color: #17d3ff;
+.yoda-input {
+  margin: 10px;
 }
+
