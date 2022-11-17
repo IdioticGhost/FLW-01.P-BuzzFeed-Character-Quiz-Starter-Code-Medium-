@@ -1,44 +1,71 @@
-let replace = document.querySelector('.replace');
+document.addEventListener('DOMContentLoaded', buzzfeedQuiz, false);
 
-let darthImage = `<img src="https://comic-cons.xyz/wp-content/uploads/Star-Wars-avatar-icon-Darth-Vader.png">`;
-let yodaImage = `<img src="https://i.pinimg.com/originals/00/5d/82/005d82a61b8bf5a25e426ab71e8bd360.jpg">`;
+function buzzfeedQuiz() {
 
-// task 1: declare a variable to save the darth send button
-let darthSend = document.querySelector('.darth-send-button');
-// task 2: declare a variable to save the yoda send button
-let yodaSend = document.querySelector('.yoda-send-button');
-// task 3: declare a variable to save the darth input
-let darthInput = document.querySelector('.darth-input');
-// task 4: declare a variable to save the yoda input
-let yodaInput = document.querySelector('.yoda-input');
-// task 5: declare a variable to save the chat window
-let chatWindow = document.querySelector('.chat-window')
+  // task 4: declare variables for the html elements you'll use as selectors later. You need the submit button, display div, and all three inputs for your questions.
+  let mustBeThree = document.querySelector(".hastobethree")
+  let button = document.querySelector(".submit");
+  let displayResult = document.querySelector(".displayResult");
+  let q1 = document.querySelector(".q1");
+  let q2 = document.querySelector(".q2");
+  let q3 = document.querySelector(".q3");
+  let q4 = document.querySelector(".q4");
+  let q1question = document.querySelector(".favnumberq1");
+  
+  // task 5: declare variables for values we'll set later. You'll need one for an image source, a result and a score for each question.
+  let imgSrc;
+  let character;
+  let q1Score;
+  let q2Score;
+  let q3Score;
+  let q4Score;
 
 
+  button.onclick = function() {
 
-// task 6: create an onclick event for the darth button
-darthSend.onclick = function() {
+    // task 6: Declare user input variables for each of your questions. If you have three questions, you should have three variables. These variables should equal the value of the user input for each question.
 
-  // task 7: declare a variable for darth's message that saves the value of the darth input
-let darthMessage = darthInput.value
-  // task 8: declare a variable that saves the message you want to append. Using string interpolation, make sure the darth message and darthImage variable are inside a div with the class name "darth-container".
-let appendDarthMessage = `<div class="darth-container">
-${darthImage}<p>${darthMessage}</p></div>`
-console.log(appendDarthMessage)
-  // task 9: add(append) the message to the chat window. Use the position beforeend. Don't forget to close off your click event!
-chatWindow.insertAdjacentHTML("beforeend", appendDarthMessage)
+let firstFavoriteNumber = Number(q1.value);
+let secondFavoriteNumber = Number(q2.value);
+let thirdFavoriteNumber = Number(q3.value);
+let sumFavoriteNumber = q4;
+
+    // task 7: create a conditional statement for the responses to Question 1 based on the user input.
+
+if (firstFavoriteNumber !== 3) {
+mustBeThree.innerHTML('beforeend',"incorrect")
+mustBeThree.style = "color: #eb2642";
+} else {
+  mustBeThree.innerHTML('beforeend',"correct!")
+  mustBeThree.style = "color: #cbd0bd";
 }
-// task 10: create an onclick event for the yoda button
-yodaSend.onclick = function () {
 
-  // task 11: declare a variable for yoda's message that saves the value of the yoda input.
-let yodaMessage = yodaInput.value
-  console.log(yodaMessage)
-  // task 12: declare a variable that saves the message you want to append. Using string interpolation, make sure the yoda message and yodaImage variable are inside a div with the class name "yoda-container".
-let appendYodaMessage = `<div class="yoda-container">
-${yodaImage}<p>${yodaMessage}</p></div>`;
-  console.log(yodaMessage)
-  // task 13: add(append) the message to the chat window. Use the position beforeend. Don't forget to close off your click event!
-chatWindow.insertAdjacentHTML("beforeend",appendYodaMessage)
-console.log(appendYodaMessage)
+
+    // task 8: create a conditional statement for the responses to Question 2 based on the user input.
+
+
+
+
+    // task 9: create a conditional statement for the responses to Question 4 based on the user input.
+
+    
+    let score = q1 + q2 + q3
+    
+if (sumFavoriteNumber === 1) {
+  html.insertAdjacentHTML('beforeend',"Your favorite number is" + "score");
+} else {
+  html.insertAdjacentHTML('beforeend',"Okay.")
+}
+    
+
+    // task 10: declare a variable for the total score of the quiz and set it equal to the sum of each question score.
+
+l
+
+
+    // task 11: create a conditional statement for the result to the quiz based on the total score. Using string interpolation, display these to the page: the result, an image that corresponds and a message to go with it.
+
+
+
+  };
 }

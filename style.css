@@ -1,114 +1,53 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-image: url('https://images.pexels.com/photos/7311920/pexels-photo-7311920.jpeg?cs=srgb&dl=pexels-alberlan-barros-7311920.jpg&fm=jpg')
+  font-family: 'Slabo 27px', serif;
 }
 
-
-.chat-window {
-  background-color: rgba(31, 31, 46, 0.7);
-  padding: 20px;
-  margin: auto;
-  max-width: 800px;
-  
-}
-
-.messengers {
+.header {
+  font-family: 'Slabo 27px', serif;
   display: flex;
-  justify-content: center;
-  padding-top: 50px;
+  justify-content: space-around;
+  color: #0f65ef;
+  font-size:27px;
 }
 
-
-/* chat containers */
-.darth-container {
-  border: 2px solid #000000;
-  background-color: #5000c7;
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  margin: auto;
-  margin-top: 10px;
-  max-width: 700px;
-
+.logo {
+  width: 100px;
 }
 
-
-.yoda-container {
-  border-color: #ccc;
-  background-color: #00a372;
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  margin: auto;
-  margin-top: 10px;
-  text-align: right;
-   max-width: 700px;
-}
-
-/* avatar images */
-.darth-container img {
-  border-radius: 50%;
-  height: 50px;
-  margin: 10px;
-  float: left;
-  max-width: 60px;
-}
-
-.yoda-container img {
-  border-radius: 50%;
-  height: 50px;
-  margin: 10px;
-  float: right;
-  max-width: 60px;
-}
-
-
-/* inputs and buttons */
-.sender-darth {
-  background-color: #5000c7;
-  color: white;
-  margin: 10px;
-  padding: 10px;
+.cover{
   text-align: center;
-  border-radius: 10px;
 }
 
-.sender-yoda {
-  background-color: #00a372;
-  color: white;
-  margin: 10px;
-  padding: 10px;
+a {
+  color: #0f65ef;
+  font-weight: bold;
+}
+
+.coverPhoto {
+  width: 100%;
+}
+
+.displayResult{
   text-align: center;
-  border-radius: 10px;
 }
 
-.darth-container::after {
-  content: "";
-  clear: left;
-  display: table;
-
+img{
+  width: 100%;
 }
 
-.yoda-container::after {
-  content: "";
-  clear: right;
-  display: table;
+button {
+  margin-top: 10px;
+  color: white;
+  background-color: #eb2642;
+  font-size: 40px;
+  border-radius: 25px;
+  border:3px groove black;
+  font-family: monospace;
+  padding: 20px;
 }
 
-.sender-title-darth {
-  padding: 10px;
+.hastobethree {
+  color:#eb2642;
 }
-
-.sender-title-yoda {
-  padding: 10px;
-}
-
-.darth-input {
-  margin: 10px;
-}
-
-.yoda-input {
-  margin: 10px;
-}
-
